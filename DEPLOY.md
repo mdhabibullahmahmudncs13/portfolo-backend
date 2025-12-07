@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 2. Add the following configuration:
    ```env
-   SECRET_KEY=your-super-secret-key-here
+   SECRET_KEY=paste-the-generated-key-here
    DEBUG=False
    ALLOWED_HOSTS=yourusername.pythonanywhere.com
    CORS_ALLOWED_ORIGINS=https://your-frontend-domain.com,https://www.your-frontend-domain.com
@@ -58,6 +58,7 @@ pip install -r requirements.txt
 3. Generate a new SECRET_KEY:
    ```bash
    python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+   
    ```
 
 ## Step 6: Database Setup
